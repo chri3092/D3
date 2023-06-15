@@ -1,0 +1,89 @@
+.card {
+    width: 502px;
+    height: 680px;
+}
+.down button {
+    color: white;
+    background-color: red;
+    border: 2px solid red;
+    font-weight: 600;
+    font-size: 30px;
+    border-radius: 55px;
+    height: 70px;
+    width: 100px;
+    position: absolute;
+    bottom: 10rem;
+    left: 365px;
+    transform: translateY(-800px);
+    transition: 0.50s;
+    opacity: 0;
+}
+.up {
+    display: inline-block;
+}
+.icon {
+    font-size: 25px;
+    text-align: center;
+}
+ .round button{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: white solid;
+    border-radius: 50%;  
+    text-align: center; 
+    position: relative;
+    display: inline-block;
+    left: 40px;
+    transform: translateY(0px);
+    transition: 0.35s;
+    opacity: 0;
+    cursor: pointer;
+    font-size: 30px;
+    line-height: 1rem;
+}
+#text button ion-icon{
+    font-size: 10px;
+    display: flex;
+    
+}
+
+#text button{
+    width: 300px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    position: relative;
+    left: 40px;
+    transform: translateY(-10px);
+    transition: 0.35s;
+    cursor: pointer;
+    margin-left: 5px;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    line-height: 1rem;
+}
+
+.card:hover .down button {
+    transform: translateY(-600px);
+    opacity: 1;
+}
+
+.card:hover .round button {
+    transform: translateY(-100px);
+    opacity: 1;
+}
+
+.card:hover #text button {
+    transform: translateY(-112px);
+    opacity: 1;
+}
+.card:hover .img {
+    filter: brightness(0.7);
+}
+
+
